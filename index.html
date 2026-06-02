@@ -1,23 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
 body{
     margin:0;
-    font-family:Arial,sans-serif;
+    padding:0;
+    font-family: Arial, sans-serif;
     font-size:14px;
+    color:#555;
     text-align:center;
+    background:transparent;
+}
+
+.footer{
+    padding:10px;
 }
 </style>
 </head>
 <body>
 
-PPMQA &copy; 2020 - <span id="year"></span> | Developed by PPMQA Media
+<div class="footer">
+    PPMQA &copy; 2020 - <span id="year"></span> | Developed by PPMQA Media
+</div>
 
 <script>
-document.getElementById("year").textContent =
-new Date().getFullYear();
+document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
 </body>
